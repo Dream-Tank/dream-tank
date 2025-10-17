@@ -1,5 +1,5 @@
 /**
- * Configuration for Shark Tank Backend
+ * Configuration for Dream Tank Backend
  * Loads from environment variables or uses defaults
  */
 

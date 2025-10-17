@@ -1,4 +1,4 @@
-# 📋 Project Summary - Shark Tank Mode
+# 📋 Project Summary - Dream Tank
 
 ## **🎯 What We Built**
 

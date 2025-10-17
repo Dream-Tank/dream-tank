@@ -141,7 +141,7 @@ const Dashboard = () => {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-foreground">
-                  Shark Tank Mode
+                  Dream Tank
                 </h1>
                 <p className="text-xs text-muted-foreground">Innovation Hub</p>
               </div>

@@ -21,7 +21,7 @@ const Login = () => {
             <Lightbulb className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-foreground mb-2">
-            Shark Tank Mode
+            Dream Tank
           </h1>
           <p className="text-muted-foreground">
             Sign in to start innovating

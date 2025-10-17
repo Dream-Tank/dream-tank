@@ -1,4 +1,4 @@
-#  Shark Tank Mode
+#  Dream Tank
 
 **A Campus Innovation Platform for Student Idea Validation**
 
@@ -14,7 +14,7 @@ Universities have brilliant students with innovative ideas, but lack a structure
 - Build community around campus innovation
 - Gamify the innovation process to drive engagement
 
-**Shark Tank Mode** solves this by creating a mini "Shark Tank" experience on campus, leveraging Microsoft's existing infrastructure.
+**Dream Tank** solves this by creating a mini "Dream Tank" experience on campus, leveraging Microsoft's existing infrastructure.
 
 ---
 
@@ -153,7 +153,7 @@ Our custom design system is built on HSL color tokens for easy theming:
 
 ##  Microsoft Integration
 
-Shark Tank Mode leverages your campus's existing Microsoft infrastructure:
+Dream Tank leverages your campus's existing Microsoft infrastructure:
 
  **Single Sign-On** - Login with campus Microsoft account  
  **OneDrive Storage** - Host video pitches in your OneDrive  

@@ -82,7 +82,7 @@ const Dashboard = () => {
                 <Lightbulb className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-foreground">Shark Tank Mode</h1>
+                <h1 className="text-xl font-bold text-foreground">Dream Tank</h1>
                 <p className="text-xs text-muted-foreground">
                   {user ? `Welcome, ${user.name}` : "Innovation Hub"}
                 </p>

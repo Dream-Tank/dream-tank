@@ -1,6 +1,6 @@
 /**
  * Main Server File
- * Shark Tank Mode Backend API
+ * Dream Tank Backend API
  */
 
 import express from 'express';
@@ -33,7 +33,7 @@ app.use('/api/', apiLimiter);
 app.get('/health', (req, res) => {
   res.json({
     success: true,
-    message: 'Shark Tank Mode API is running!',
+    message: 'Dream Tank API is running!',
     timestamp: new Date().toISOString()
   });
 });
@@ -72,7 +72,7 @@ app.listen(PORT, () => {
   console.log(`
 ╔════════════════════════════════════════════════╗
 ║                                                ║
-║     🦈 SHARK TANK MODE API                    ║
+║     💭 DREAM TANK API                         ║
 ║                                                ║
 ║     Server running on port ${PORT}               ║
 ║     Environment: ${config.nodeEnv}                   ║

@@ -1,7 +1,7 @@
 {
   "name": "shark-tank-backend",
   "version": "1.0.0",
-  "description": "Backend API for Shark Tank Mode",
+  "description": "Backend API for Dream Tank",
   "main": "src/server.js",
   "type": "module",
   "scripts": {

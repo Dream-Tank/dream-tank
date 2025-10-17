@@ -43,7 +43,7 @@ const Home = () => {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Shark Tank Mode
+              Dream Tank
             </span>
           </h1>
 
@@ -104,7 +104,7 @@ const Home = () => {
               className="text-xl max-w-2xl mx-auto"
               style={{ color: "#654321" }}
             >
-              A mini Shark Tank for students and staff to pitch, validate, and
+              A mini Dream Tank for students and staff to pitch, validate, and
               bring ideas to life
             </p>
           </div>
@@ -175,7 +175,7 @@ const Home = () => {
               className="text-xl max-w-3xl mx-auto"
               style={{ color: "#654321" }}
             >
-              Shark Tank Mode integrates seamlessly with your existing Microsoft
+              Dream Tank integrates seamlessly with your existing Microsoft
               tools, making innovation effortless
             </p>
           </div>
@@ -224,7 +224,7 @@ const Home = () => {
               className="text-xl max-w-2xl mx-auto mb-6"
               style={{ color: "rgba(255, 255, 255, 0.95)" }}
             >
-              Your campus already uses Microsoft - Shark Tank Mode simply plugs
+              Your campus already uses Microsoft - Dream Tank simply plugs
               right in. One login, infinite possibilities.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
