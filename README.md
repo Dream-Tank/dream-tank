@@ -1,4 +1,4 @@
-# 🦈 Shark Tank Mode
+#  Shark Tank Mode
 
 **A Campus Innovation Platform for Student Idea Validation**
 
@@ -6,7 +6,7 @@ Transform your campus into an innovation hub where students pitch ideas, receive
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Universities have brilliant students with innovative ideas, but lack a structured platform to:
 - Validate ideas through peer feedback
@@ -18,20 +18,20 @@ Universities have brilliant students with innovative ideas, but lack a structure
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### 🚀 For Students
+###  For Students
 - **Pitch Ideas** - Submit text, images, and video pitches (OneDrive compatible)
 - **Get Validated** - Real-time voting and community feedback
 - **AI Scoring** - Automated idea quality assessment
 - **Gamification** - Earn badges, climb leaderboards, compete weekly
 
-### 👨‍🏫 For Mentors
+###  For Mentors
 - **Review Queue** - Curated feed of student ideas
 - **Endorsements** - "Mentor's Pick" badge for promising ideas
 - **Feedback System** - Guide students toward success
 
-### 🏫 For Campus
+###  For Campus
 - **Microsoft Integration** - SSO, OneDrive, Teams notifications
 - **Zero Setup** - Works with existing campus Microsoft accounts
 - **Analytics** - Track innovation metrics across campus
@@ -39,7 +39,7 @@ Universities have brilliant students with innovative ideas, but lack a structure
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Frontend:**
 - React 18 + TypeScript
@@ -63,7 +63,7 @@ Universities have brilliant students with innovative ideas, but lack a structure
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js 18+ and npm
@@ -96,7 +96,7 @@ npm run lint         # Run ESLint
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -120,7 +120,7 @@ src/
 
 ---
 
-## 🎨 Design System
+##  Design System
 
 Our custom design system is built on HSL color tokens for easy theming:
 
@@ -133,7 +133,7 @@ Our custom design system is built on HSL color tokens for easy theming:
 
 ---
 
-## 🎮 Gamification System
+##  Gamification System
 
 **Point System:**
 - Submit idea: +50 points
@@ -142,29 +142,29 @@ Our custom design system is built on HSL color tokens for easy theming:
 - Comment on idea: +2 points
 
 **Achievement Badges:**
-- 🏆 **Top Pitcher** - Submit 5+ ideas with 10+ votes each
-- 📈 **Idea Refiner** - Receive 100+ total votes
-- ⭐ **Mentor Magnet** - Get 3+ mentor endorsements
-- 💡 **Community Hero** - Help others with 50+ comments
-- 🥇 **Innovation Champion** - Top 3 for 3 consecutive weeks
-- 🌟 **Rising Star** - New member with exceptional ideas
+-  **Top Pitcher** - Submit 5+ ideas with 10+ votes each
+-  **Idea Refiner** - Receive 100+ total votes
+-  **Mentor Magnet** - Get 3+ mentor endorsements
+-  **Community Hero** - Help others with 50+ comments
+-  **Innovation Champion** - Top 3 for 3 consecutive weeks
+-  **Rising Star** - New member with exceptional ideas
 
 ---
 
-## 🔐 Microsoft Integration
+##  Microsoft Integration
 
 Shark Tank Mode leverages your campus's existing Microsoft infrastructure:
 
-✅ **Single Sign-On** - Login with campus Microsoft account  
-✅ **OneDrive Storage** - Host video pitches in your OneDrive  
-✅ **Teams Integration** - Get notifications in Microsoft Teams  
-✅ **Azure Security** - Enterprise-grade authentication  
+ **Single Sign-On** - Login with campus Microsoft account  
+ **OneDrive Storage** - Host video pitches in your OneDrive  
+ **Teams Integration** - Get notifications in Microsoft Teams  
+ **Azure Security** - Enterprise-grade authentication  
 
 No extra accounts. No new passwords. Just innovation.
 
 ---
 
-## 🚀 Roadmap
+##  Roadmap
 
 ### Current Phase (MVP)
 - [x] Landing page and marketing site
@@ -194,7 +194,7 @@ No extra accounts. No new passwords. Just innovation.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Areas we'd love help with:
 - Backend API development
@@ -223,4 +223,4 @@ Questions? Reach out
 
 ---
 
-**🦈 Ready to make your campus the next innovation powerhouse?**
+** Ready to make your campus the next innovation powerhouse?**
