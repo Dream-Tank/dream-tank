@@ -1,7 +1,14 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Trophy, Medal, Award, TrendingUp, Lightbulb, ArrowLeft } from "lucide-react";
+import {
+  Trophy,
+  Medal,
+  Award,
+  TrendingUp,
+  Lightbulb,
+  ArrowLeft,
+} from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const LEADERBOARD = [
@@ -12,7 +19,7 @@ const LEADERBOARD = [
     ideas: 8,
     votes: 342,
     badges: ["Top Pitcher", "Idea Refiner", "Community Hero"],
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
+    avatar: "/avatars/sarah.jpeg",
   },
   {
     rank: 2,
@@ -21,7 +28,7 @@ const LEADERBOARD = [
     ideas: 12,
     votes: 298,
     badges: ["Top Pitcher", "Innovation Champion"],
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marcus",
+    avatar: "/avatars/marcus.jpeg",
   },
   {
     rank: 3,
@@ -30,7 +37,7 @@ const LEADERBOARD = [
     ideas: 6,
     votes: 287,
     badges: ["Mentor Magnet", "Rising Star"],
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma",
+    avatar: "/avatars/emma.jpeg",
   },
   {
     rank: 4,
@@ -39,7 +46,7 @@ const LEADERBOARD = [
     ideas: 5,
     votes: 251,
     badges: ["Top Pitcher", "Community Hero"],
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=David",
+    avatar: "/avatars/david.jpeg",
   },
   {
     rank: 5,
@@ -48,7 +55,7 @@ const LEADERBOARD = [
     ideas: 9,
     votes: 223,
     badges: ["Idea Refiner"],
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Lisa",
+    avatar: "/avatars/lisa.jpeg",
   },
   {
     rank: 6,
@@ -57,17 +64,47 @@ const LEADERBOARD = [
     ideas: 7,
     votes: 209,
     badges: ["Rising Star"],
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Ryan",
+    avatar: "/avatars/ryan.jpeg",
   },
 ];
 
 const BADGES = [
-  { name: "Top Pitcher", description: "Submit 5+ ideas with 10+ votes each", icon: Trophy, color: "bg-secondary" },
-  { name: "Idea Refiner", description: "Receive 100+ total votes", icon: TrendingUp, color: "bg-primary" },
-  { name: "Mentor Magnet", description: "Get 3+ mentor endorsements", icon: Award, color: "bg-accent" },
-  { name: "Community Hero", description: "Help others with 50+ comments", icon: Lightbulb, color: "bg-primary-light" },
-  { name: "Innovation Champion", description: "Top 3 for 3 consecutive weeks", icon: Medal, color: "bg-secondary" },
-  { name: "Rising Star", description: "New member with exceptional ideas", icon: TrendingUp, color: "bg-accent" },
+  {
+    name: "Top Pitcher",
+    description: "Submit 5+ ideas with 10+ votes each",
+    icon: Trophy,
+    color: "bg-secondary",
+  },
+  {
+    name: "Idea Refiner",
+    description: "Receive 100+ total votes",
+    icon: TrendingUp,
+    color: "bg-primary",
+  },
+  {
+    name: "Mentor Magnet",
+    description: "Get 3+ mentor endorsements",
+    icon: Award,
+    color: "bg-accent",
+  },
+  {
+    name: "Community Hero",
+    description: "Help others with 50+ comments",
+    icon: Lightbulb,
+    color: "bg-primary-light",
+  },
+  {
+    name: "Innovation Champion",
+    description: "Top 3 for 3 consecutive weeks",
+    icon: Medal,
+    color: "bg-secondary",
+  },
+  {
+    name: "Rising Star",
+    description: "New member with exceptional ideas",
+    icon: TrendingUp,
+    color: "bg-accent",
+  },
 ];
 
 const Leaderboard = () => {
@@ -82,7 +119,11 @@ const Leaderboard = () => {
       case 3:
         return <Award className="w-6 h-6 text-accent" />;
       default:
-        return <div className="w-6 h-6 flex items-center justify-center text-muted-foreground font-bold">#{rank}</div>;
+        return (
+          <div className="w-6 h-6 flex items-center justify-center text-muted-foreground font-bold">
+            #{rank}
+          </div>
+        );
     }
   };
 
@@ -93,7 +134,7 @@ const Leaderboard = () => {
         <div className="max-w-6xl mx-auto px-6 py-4">
           <Button
             variant="ghost"
-            onClick={() => navigate('/dashboard')}
+            onClick={() => navigate("/dashboard")}
             className="mb-2"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
@@ -104,8 +145,12 @@ const Leaderboard = () => {
               <Trophy className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-foreground">Leaderboard</h1>
-              <p className="text-sm text-muted-foreground">Celebrating campus innovation champions</p>
+              <h1 className="text-2xl font-bold text-foreground">
+                Leaderboard
+              </h1>
+              <p className="text-sm text-muted-foreground">
+                Celebrating campus innovation champions
+              </p>
             </div>
           </div>
         </div>
@@ -130,9 +175,11 @@ const Leaderboard = () => {
 
         {/* Rest of Leaderboard */}
         <Card className="p-6 mb-8">
-          <h2 className="text-xl font-bold text-foreground mb-6">Top Innovators</h2>
+          <h2 className="text-xl font-bold text-foreground mb-6">
+            Top Innovators
+          </h2>
           <div className="space-y-3">
-            {LEADERBOARD.slice(3).map(user => (
+            {LEADERBOARD.slice(3).map((user) => (
               <div
                 key={user.rank}
                 className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors"
@@ -151,7 +198,9 @@ const Leaderboard = () => {
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="text-2xl font-bold text-primary">{user.points}</div>
+                  <div className="text-2xl font-bold text-primary">
+                    {user.points}
+                  </div>
                   <div className="text-xs text-muted-foreground">points</div>
                 </div>
               </div>
@@ -161,20 +210,28 @@ const Leaderboard = () => {
 
         {/* Badges Section */}
         <Card className="p-6">
-          <h2 className="text-xl font-bold text-foreground mb-6">Achievement Badges</h2>
+          <h2 className="text-xl font-bold text-foreground mb-6">
+            Achievement Badges
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {BADGES.map(badge => {
+            {BADGES.map((badge) => {
               const Icon = badge.icon;
               return (
                 <div
                   key={badge.name}
                   className="p-4 rounded-lg border border-border hover:shadow-card transition-shadow"
                 >
-                  <div className={`w-12 h-12 rounded-lg ${badge.color} flex items-center justify-center mb-3`}>
+                  <div
+                    className={`w-12 h-12 rounded-lg ${badge.color} flex items-center justify-center mb-3`}
+                  >
                     <Icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-1">{badge.name}</h3>
-                  <p className="text-sm text-muted-foreground">{badge.description}</p>
+                  <h3 className="font-semibold text-foreground mb-1">
+                    {badge.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {badge.description}
+                  </p>
                 </div>
               );
             })}
@@ -185,11 +242,19 @@ const Leaderboard = () => {
   );
 };
 
-const PodiumCard = ({ user, featured }: { user: typeof LEADERBOARD[0]; featured?: boolean }) => {
+const PodiumCard = ({
+  user,
+  featured,
+}: {
+  user: (typeof LEADERBOARD)[0];
+  featured?: boolean;
+}) => {
   return (
     <Card
       className={`p-6 text-center ${
-        featured ? "shadow-glow border-2 border-primary md:-translate-y-4" : "shadow-card"
+        featured
+          ? "shadow-glow border-2 border-primary md:-translate-y-4"
+          : "shadow-card"
       }`}
     >
       <div className="mb-4 relative">
@@ -206,16 +271,26 @@ const PodiumCard = ({ user, featured }: { user: typeof LEADERBOARD[0]; featured?
           } rounded-full bg-card border-2 border-border flex items-center justify-center`}
         >
           {user.rank === 1 && <Trophy className="w-6 h-6 text-secondary" />}
-          {user.rank === 2 && <Medal className="w-5 h-5 text-muted-foreground" />}
+          {user.rank === 2 && (
+            <Medal className="w-5 h-5 text-muted-foreground" />
+          )}
           {user.rank === 3 && <Award className="w-5 h-5 text-accent" />}
         </div>
       </div>
 
-      <h3 className={`font-bold text-foreground mb-1 ${featured ? "text-xl" : "text-lg"}`}>
+      <h3
+        className={`font-bold text-foreground mb-1 ${
+          featured ? "text-xl" : "text-lg"
+        }`}
+      >
         {user.name}
       </h3>
 
-      <div className={`font-bold mb-4 ${featured ? "text-3xl text-primary" : "text-2xl text-foreground"}`}>
+      <div
+        className={`font-bold mb-4 ${
+          featured ? "text-3xl text-primary" : "text-2xl text-foreground"
+        }`}
+      >
         {user.points}
         <span className="text-sm text-muted-foreground ml-1">pts</span>
       </div>
@@ -232,7 +307,7 @@ const PodiumCard = ({ user, featured }: { user: typeof LEADERBOARD[0]; featured?
       </div>
 
       <div className="flex flex-wrap gap-1 justify-center">
-        {user.badges.slice(0, 2).map(badge => (
+        {user.badges.slice(0, 2).map((badge) => (
           <Badge key={badge} variant="secondary" className="text-xs">
             {badge}
           </Badge>
