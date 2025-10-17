@@ -43,6 +43,8 @@ export const config = {
   ai: {
     draftThreshold: 60, // Below this = DRAFT
     approvalThreshold: 80, // Above this = can fast-track to APPROVED
+    provider: process.env.AI_PROVIDER || 'mock', // 'mock' or 'gemini'
+    geminiApiKey: process.env.GEMINI_API_KEY || '',
   }
 };
 

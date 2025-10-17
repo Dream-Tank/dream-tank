@@ -7,7 +7,7 @@ import express from 'express';
 import prisma from '../config/database.js';
 import { authenticate, optionalAuth, requireRole } from '../middleware/auth.js';
 import { submissionLimiter } from '../middleware/rateLimiter.js';
-import { scoreIdea } from '../services/aiService.js';
+import { scoreIdea } from '../services/aiServiceRouter.js';
 import { awardPoints, checkBadges } from '../utils/gamification.js';
 
 const router = express.Router();
@@ -28,8 +28,8 @@ router.post('/', authenticate, submissionLimiter, async (req, res) => {
       });
     }
     
-    // Run AI scoring
-    const aiResults = scoreIdea({ title, description, category });
+    // Run AI scoring (async)
+    const aiResults = await scoreIdea({ title, description, category });
     
     // Create idea with AI scores
     const idea = await prisma.idea.create({

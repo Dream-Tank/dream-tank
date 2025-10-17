@@ -5,7 +5,7 @@
 
 import bcrypt from 'bcryptjs';
 import prisma from '../config/database.js';
-import { scoreIdea } from '../services/aiService.js';
+import { scoreIdea } from '../services/aiServiceRouter.js';
 
 const DEMO_USERS = [
   { name: 'Sarah Chen', email: 'sarah@campus.edu', role: 'user' },
@@ -94,7 +94,7 @@ async function seed() {
       const author = users[i % users.length];
       
       // Run AI scoring
-      const aiResults = scoreIdea(ideaData);
+      const aiResults = await scoreIdea(ideaData);
       
       const idea = await prisma.idea.create({
         data: {
